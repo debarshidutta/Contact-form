@@ -1,0 +1,161 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.A {
+    font-family:'Times New Roman', Times, serif;
+    margin: 20 px auto;
+    padding: 20px;
+    text-align:center;
+}
+
+.A p {
+    font-family:'Bookman Old Style',serif;
+    margin: 20px auto;
+    max-width: 800px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.B {
+    background-color: rgb(187, 197, 194);
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+    max-width: 1200px;
+}
+
+.Container {
+    background-color: rgb(40, 170, 203);
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 5vw;
+    margin: 10px auto;
+    max-width: 800px;
+}
+
+.Container h1 {
+    margin: 0 0 20px 0;
+    color: wheat;
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+.container input {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 39px;
+    font-size: 20px;
+    padding-left: 10px;
+    box-shadow: 0 2px 4px rgba(90, 173, 124, 0.1);
+}
+
+.container input:hover {
+    cursor: pointer;
+    border-color: whitesmoke;
+    border-width: 3px;
+    transition-duration: 0.4s;
+}
+
+.container input:focus {
+    outline: none;
+    border-color: rgb(192, 192, 192);
+    border-width: 3px;
+}
+
+.p {
+    background-color: rgb(23, 169, 210);
+    text-align: center;
+    margin: 10px 0;
+}
+
+.p label {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.Radio {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(40, 170, 203);
+    padding: 10px 0;
+    cursor:pointer
+}
+
+.Button {
+    margin-top: 20px;
+}
+
+.Submit {
+    border-radius: 5px;
+    height: 50px;
+    width: 60%;
+    max-width: 300px;
+    background-color: aquamarine;
+    font-size: 25px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.Submit:hover {
+    height: 55px;
+    font-size: 30px;
+    background-color: aqua;
+    color: wheat;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .Container {
+        padding: 10vw 5vw;
+        margin: 10vw 5vw;
+    }
+
+    .container input {
+        font-size: 18px;
+    }
+
+    .Submit {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .B {
+        padding: 10px 2%;
+    }
+
+    .container input {
+        font-size: 16px;
+    }
+
+    .Submit {
+        font-size: 18px;
+    }
+
+    .Radio {
+        flex-direction: column;
+    }
+
+    .p {
+        margin: 5px 0;
+    }
+}
+
+/* Larger screen styles */
+@media screen and (min-width: 769px) {
+    .B {
+        max-width: 800px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
